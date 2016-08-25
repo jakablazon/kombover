@@ -35,6 +35,27 @@
 .img_3-2{background-image:url('https://farm7.staticflickr.com/6083/6055581292_d94c2d90e3.jpg');}
 .img_3-3{background-image:url('https://farm4.staticflickr.com/3771/13199704015_72aa535bd7.jpg');}
 
+.img {
+     position: relative;
+ }
+ 
+ .img:before {
+     -webkit-transition: .3s ease-in-out; /* Safari */
+    transition: .3s ease-in-out;
+ }
+ 
+ .img:hover:before {
+    position: absolute;
+     content: "";
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     display: block;
+     background: #000;
+     opacity: 0.5;
+ 
+ }
 
 
 
